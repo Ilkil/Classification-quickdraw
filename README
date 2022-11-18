@@ -1,0 +1,5 @@
+Requirements :
+- Python
+- Flask -> pip3 install flask
+Run server with :
+- python app.py

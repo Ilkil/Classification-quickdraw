@@ -1,0 +1,14 @@
+*~*~ 07/10/2022 ~*~*
+
+G.H :
+
+Fait 
+- Créer le design du site `/
+En cours:
+- Programmer le site 
+- Intégrer l'emplacement où l'utilisateur pourra dessiner OU importer son image, qui sera ensuite analysée par le modèle python côté serveur
+- Intégrer l'emplacement où le modèle affichera le label ET/OU une image correspondante
+--> Créer un canvas dans lequel on peut dessiner ~- 
+A faire:
+- Mettre en place le serveur Python sous Flask
+--> Dans app/pred.py Fonctions de prédiction/accuracy + Modèle sauvegardé

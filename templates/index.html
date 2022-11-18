@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+<div id = "content">
+    <div id = "panGauche">
+    <!-- Partie gauche-->
+        <div id ="toolbar">
+                <ul id ="topbar">
+                    <li><button @click="changeState('point')" id = "point">Point</button></li>
+                    <li><button id = "circle">Circle</button></li>
+                    <li><button @click="changeState('rectangle')" id = "rectangle">Rectangle</button></li>
+                    <li><button @click="changeState('line')" id = "line">Line</button></li>
+                    <li><button @click="clear" id = "clear">Clear</button></li>
+                    <li><button @click="changeState('pen')" id = "pen">Pen</button></li>
+                    <li><button @click="changeState('eraser')" id = "eraser">Eraser</button></li>
+                </ul>
+        </div>
+        <section class = "drawContainer">
+            <canvas @mousedown="startPainting" @mouseup="finishedPainting" @mousemove="draw" id ="drawing-board"></canvas>
+        </section>
+
+        <!-- Action Upload -->
+        <form action="/" method="POST">
+            <div id ="bottombar">
+                <ul id ="bbar">
+                    <li><input type="file" id="upload" @change="updateCanvasImage"/></li>
+                    <li><button @click="" id = "save">Save as...</button></li>
+                    <li><input type="submit" value = "Valider"></li>
+                </ul>
+            </div>
+        </form>
+        <!-- Partie gauche-->
+        <!--<section class = "container"></section>-->
+    </div>
+    <div id = "panDroit">
+        <section class = "drawContainer">
+            <canvas @mousedown="startPainting" @mouseup="finishedPainting" @mousemove="draw" id ="result-board"></canvas>
+        </section>
+        <h2 id = "predicted">C'est un... {{flask}}</h1>
+    </div>
+</div>
+{% endblock %}
