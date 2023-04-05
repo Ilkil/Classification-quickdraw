@@ -3,6 +3,8 @@ Le modèle est entraîné avec le dataset Quickdraw de Google, qui est une colle
 Une fois entraîné, le modèle est implémenté dans une application web à l'aide du framework Flask. 
 L'application web permet de reconnaitre et générer(non opérationnel) de nouvelles images.
 
+Un rapport un peu plus détaillé est disponible dans *rapport_projet.pdf*
+
 Requirements :
 - Python
 - Flask -> pip3 install flask
