@@ -1,3 +1,8 @@
+Ce projet utilise Python avec la bibliothèque TensorFlow pour créer un Convolutional Neural Network (CNN) et un Generative Adversarial Network (GAN). 
+Le modèle est entraîné avec le dataset Quickdraw de Google, qui est une collection de dessins simples en ligne.
+Une fois entraîné, le modèle est implémenté dans une application web à l'aide du framework Flask. 
+L'application web permet de reconnaitre et générer(non opérationnel) de nouvelles images.
+
 Requirements :
 - Python
 - Flask -> pip3 install flask
